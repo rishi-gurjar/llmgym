@@ -1,0 +1,16 @@
+name                ,gender ,age ,political_leaning ,marital_status ,education                                    ,occupation         ,income ,religion           ,ethnicity           ,nationality
+Mohammad Al-Khateeb ,male   , 55 ,conservative      ,divorced       ,master's degree                              ,farmer             , 50000 ,Muslim             ,Middle Eastern      ,Syrian
+Aisha Patel         ,female , 28 ,moderate          ,single         ,doctorate                                    ,research scientist ,120000 ,Hindu              ,Indian              ,India
+Carlos Rodriguez    ,male   , 45 ,centrist          ,widowed        ,high school diploma                          ,blue collar worker , 45000 ,Atheist            ,Hispanic            ,Mexico
+Sofia Nguyen        ,female , 60 ,progressive       ,widowed        ,associate's degree                           ,retired teacher    , 30000 ,Buddhist           ,Vietnamese American ,United States
+Ahmed Ali           ,male   , 25 ,independent       ,single         ,high school diploma                          ,artist             , 35000 ,Sikh               ,Pakistani           ,United Kingdom
+Emma Garcia         ,female , 40 ,centrist          ,married        ,master's degree                              ,doctor             ,150000 ,Judaism            ,African American    ,United States
+Mehmet Yilmaz       ,male   , 65 ,left-leaning      ,married        ,doctorate                                    ,professor          ,100000 ,Jain               ,South Asian         ,Nepal
+Michael Brown       ,male   , 70 ,independent       ,retired        ,PhD                                          ,engineer           ,150000 ,Jehovah's Witness  ,Caucasian           ,Canada
+Anna Kim            ,female , 38 ,progressive       ,single         ,bachelor's degree in business administration ,entrepreneur       ,105000 ,Bahá'í             ,Korean              ,South Korea
+Olga Petrovna       ,female , 72 ,right-leaning     ,widowed        ,PhD in physics                               ,retired professor  , 55000 ,Orthodox Christian ,Russian             ,Russia
+Lina Hernandez      ,female , 42 ,centrist          ,married        ,master's degree in psychology                ,social worker      , 70000 ,Baha'i             ,Mexican American    ,United States
+Michaela Davis      ,female , 58 ,centrist          ,single         ,master's degree in economics                 ,business analyst   , 90000 ,Jainism            ,African             ,South Africa
+Chang Wei           ,male   , 30 ,centrist          ,engaged        ,master's degree in computer science          ,data analyst       , 75000 ,Confucianism       ,Chinese             ,Taiwan
+Mohammad Ali        ,male   , 30 ,independent       ,single         ,bachelor's degree in engineering             ,software developer , 95000 ,Zoroastrianism     ,Persian             ,Iran
+Maria Rodriguez     ,female , 50 ,progressive       ,divorced       ,master's degree in literature                ,writer             , 60000 ,Agnostic           ,Latina              ,Argentina

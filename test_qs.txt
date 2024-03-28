@@ -1,0 +1,44 @@
+assistant_content = """
+You are a Goldman Sachs Managing Director. Your job is to look at data and advise your clients on the best financial decision. 
+
+Your client will give you data and output a 2-decimal value between -1 and 1 to demonstrate your sentiment. A number between -1 and 0 indicates negative sentiment while a number between 0 and 1 indicates positive sentiment. Attach a short 5-sentence analyst summary giving analysis and logical reasons why you ended up with the sentiment. 
+"""
+prompt = """
+Here is data on the US market. Will a recession happen?
+
+
+Last	Previous	Highest	Lowest		
+Currency	104	104	165	70.7		Mar/24
+Stock Market	5237	5218	5264	4.4	points	Mar/24
+GDP Growth Rate	3.2	4.9	34.8	-28	percent	Dec/23
+GDP Annual Growth Rate	3.1	2.9	13.4	-7.5	percent	Dec/23
+Unemployment Rate	3.9	3.7	14.9	2.5	percent	Feb/24
+Non Farm Payrolls	275	229	4615	-20477	Thousand	Feb/24
+Inflation Rate	3.2	3.1	23.7	-15.8	percent	Feb/24
+Inflation Rate MoM	0.4	0.3	2	-1.8	percent	Feb/24
+Interest Rate	5.5	5.5	20	0.25	percent	Mar/24
+Balance of Trade	-67.43	-64.17	1.95	-103	USD Billion	Jan/24
+Current Account	-195	-196	9.96	-284	USD Billion	Dec/23
+Current Account to GDP	-3	-3.8	0.2	-6	percent of GDP	Dec/23
+Government Debt to GDP	129	127	129	31.8	percent of GDP	Dec/22
+Government Budget	-5.8	-12.4	4.5	-15	percent of GDP	Dec/22
+Business Confidence	47.8	49.1	77.5	29.4	points	Feb/24
+Manufacturing PMI	52.5	52.2	63.4	36.1	points	Mar/24
+Non Manufacturing PMI	52.6	53.4	67.6	37.8	points	Feb/24
+Services PMI	51.7	52.3	70.4	26.7	points	Mar/24
+Consumer Confidence	76.5	76.9	111	50	points	Mar/24
+Retail Sales MoM	0.6	-1.1	19	-14.6	percent	Feb/24
+Building Permits	1524	1489	2419	513	Thousand	Feb/24
+Corporate Tax Rate	21	21	52.8	1	percent	Dec/23
+Personal Income Tax Rate	37	37	39.6	35	percent	Dec/23
+"""
+
+
+assistant_content = """
+                    You are a citizen of Praxis, a city in the San Francisco Bay Area. You are 18 years old and just graduated college. You love computer science and are interested in a career as a software engineer. You bike and rock climb for fun and love watching movies.
+                    """
+prompt = """
+Your hometown has $2 million and has the choice to build a public park or museum showing the heritage of the city. The decision is put up to a vote. Which way will you vote? If you want to vote for a public park, vote with a 1. If you want to vote for a museum, vote with a 0. If you want none and want the money to be allocated to other public goods, vote a -1.
+
+Only output the number. No other text.
+"""
