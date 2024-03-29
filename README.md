@@ -5,7 +5,13 @@
 ![arena](https://github.com/rishi-gurjar/llmgym/assets/41022502/d0b3c4c9-aaae-4883-aaff-ed23c041621c)
 
 #### Setup
-1. Create a .env file in the root directory. Populate it with these values:
+1. Install dependencies by running:
+
+```bash
+* pip install -r requirements.txt
+```
+
+2. Create a .env file in the root directory. Populate it with these values:
 
 ```python
 OPENAI_API_KEY=<your_openai_api_key>
