@@ -34,11 +34,38 @@ Personal Income Tax Rate	37	37	39.6	35	percent	Dec/23
 """
 
 
-assistant_content = """
-                    You are a citizen of Praxis, a city in the San Francisco Bay Area. You are 18 years old and just graduated college. You love computer science and are interested in a career as a software engineer. You bike and rock climb for fun and love watching movies.
-                    """
-prompt = """
-Your hometown has $2 million and has the choice to build a public park or museum showing the heritage of the city. The decision is put up to a vote. Which way will you vote? If you want to vote for a public park, vote with a 1. If you want to vote for a museum, vote with a 0. If you want none and want the money to be allocated to other public goods, vote a -1.
 
-Only output the number. No other text.
-"""
+
+                    assistant_content = """
+                                        You are an AI bot that helps generate synethic identities for democracy testing.
+                                        """
+                    prompt = """
+                            Here is an example identity for a citizen:
+
+                                {
+                                "name": "Alice Johnson",
+                                "gender": "female",
+                                "age": 35,
+                                "political_leaning": "liberal",
+                                "marital_status": "married",
+                                "education": "bachelor's degree",
+                                "occupation": "software engineer",
+                                "income": 80000,
+                                "religion": "Christian",
+                                "ethnicity": "Asian American",
+                                "nationality": "United States"
+                                }
+
+                            Generate a new identity and make sure it is different, offering a new perspective of a citizen of Praxis. Look at the following JSON for people already in the city, make sure you generate people that represent new viewpoints and backgrounds. 
+                            
+                            """ + json.dumps(data) + """
+                            
+                            Only output the identity.
+                            """
+
+                    messages = [
+                        {"role": "system", "content": assistant_content},
+                        {"role": "user", "content": prompt}
+                    ]
+
+                    data['people'].append(mistral_call(messages, 'mistral/mistral-tiny'))
