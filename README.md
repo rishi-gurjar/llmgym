@@ -15,7 +15,7 @@ MISTRAL_API_KEY=<your_mistral_api_key>
 2. Edit 'proposition_text' and 'proposition_range' at the bottom of the vote.py file with your new proposition
 3. Run the following code and see output.csv for voting results
 
-> python vote.py
+> * python vote.py
 
 ###### LEARNINGS
 1. When the same LLM (e.g. Mistral Tiny) vote as the same person on the same proposition, hallucination rate is near-zero, very aligned
