@@ -87,5 +87,5 @@ if __name__ == "__main__":
     The balance of trade deficit has widened to -$67.43 billion, indicating that imports are outpacing exports. However, the current account deficit has narrowed to -$195 billion, suggesting an improvement in the overall trade balance.
     The government debt to GDP ratio has increased to 129%, indicating a high level of government borrowing. This could lead to higher interest rates and reduced government spending in the future. However, the government budget deficit has decreased to -5.8% of GDP, indicating an improvement in fiscal policy.
     """
-    proposition_range = ["bitcoin", "gold"]
+    proposition_range = ["bitcoin", "gold"] # "0 index" is -1 and "1 index" is 1 for gradient vote in range [-1, 1]
     vote(proposition_text, proposition_range)
