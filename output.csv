@@ -1,16 +1,16 @@
 number,number,name,gender,age,political_leaning,marital_status,education,occupation,income,religion,ethnicity,nationality,vote
 0,0,Mohammad Al-Khateeb,male,55,conservative,divorced,master's degree,farmer,50000,Muslim,Middle Eastern,Syrian,1.0
-1,1,Aisha Patel,female,28,moderate,single,doctorate,research scientist,120000,Hindu,Indian,India,0.7
-2,2,Carlos Rodriguez,male,45,centrist,widowed,high school diploma,blue collar worker,45000,Atheist,Hispanic,Mexico,0.5
-3,3,Sofia Nguyen,female,60,progressive,widowed,associate's degree,retired teacher,30000,Buddhist,Vietnamese American,United States,0.8
-4,4,Ahmed Ali,male,25,independent,single,high school diploma,artist,35000,Sikh,Pakistani,United Kingdom,0.8
-5,5,Emma Garcia,female,40,centrist,married,master's degree,doctor,150000,Judaism,African American,United States,0.5
-6,6,Mehmet Yilmaz,male,65,left-leaning,married,doctorate,professor,100000,Jain,South Asian,Nepal,0.8
-7,7,Michael Brown,male,70,independent,retired,PhD,engineer,150000,Jehovah's Witness,Caucasian,Canada,0.8
-8,8,Anna Kim,female,38,progressive,single,bachelor's degree in business administration,entrepreneur,105000,Bahá'í,Korean,South Korea,0.8
-9,9,Olga Petrovna,female,72,right-leaning,widowed,PhD in physics,retired professor,55000,Orthodox Christian,Russian,Russia,-1.0
-10,10,Lina Hernandez,female,42,centrist,married,master's degree in psychology,social worker,70000,Baha'i,Mexican American,United States,0.5
-11,11,Michaela Davis,female,58,centrist,single,master's degree in economics,business analyst,90000,Jainism,African,South Africa,0.5
-12,12,Chang Wei,male,30,centrist,engaged,master's degree in computer science,data analyst,75000,Confucianism,Chinese,Taiwan,0.2
+1,1,Aisha Patel,female,28,moderate,single,doctorate,research scientist,120000,Hindu,Indian,India,0.8
+2,2,Carlos Rodriguez,male,45,centrist,widowed,high school diploma,blue collar worker,45000,Atheist,Hispanic,Mexico,0.0
+3,3,Sofia Nguyen,female,60,progressive,widowed,associate's degree,retired teacher,30000,Buddhist,Vietnamese American,United States,1.0
+4,4,Ahmed Ali,male,25,independent,single,high school diploma,artist,35000,Sikh,Pakistani,United Kingdom,1.0
+5,5,Emma Garcia,female,40,centrist,married,master's degree,doctor,150000,Judaism,African American,United States,0.2
+6,6,Mehmet Yilmaz,male,65,left-leaning,married,doctorate,professor,100000,Jain,South Asian,Nepal,1.0
+7,7,Michael Brown,male,70,independent,retired,PhD,engineer,150000,Jehovah's Witness,Caucasian,Canada,1.0
+8,8,Anna Kim,female,38,progressive,single,bachelor's degree in business administration,entrepreneur,105000,Bahá'í,Korean,South Korea,1.0
+9,9,Olga Petrovna,female,72,right-leaning,widowed,PhD in physics,retired professor,55000,Orthodox Christian,Russian,Russia,1.0
+10,10,Lina Hernandez,female,42,centrist,married,master's degree in psychology,social worker,70000,Baha'i,Mexican American,United States,0.1
+11,11,Michaela Davis,female,58,centrist,single,master's degree in economics,business analyst,90000,Jainism,African,South Africa,0.2
+12,12,Chang Wei,male,30,centrist,engaged,master's degree in computer science,data analyst,75000,Confucianism,Chinese,Taiwan,0.0
 13,13,Mohammad Ali,male,30,independent,single,bachelor's degree in engineering,software developer,95000,Zoroastrianism,Persian,Iran,0.5
-14,14,Maria Rodriguez,female,50,progressive,divorced,master's degree in literature,writer,60000,Agnostic,Latina,Argentina,0.8
+14,14,Maria Rodriguez,female,50,progressive,divorced,master's degree in literature,writer,60000,Agnostic,Latina,Argentina,-1.0

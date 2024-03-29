@@ -9,7 +9,7 @@ df['number'] = df['number'].astype(int)
 rows = df.to_dict('records')
 people = {row['number']: row for row in rows}
 
-def vote():
+def vote(proposition_text, proposition_range):
     for person in people:
         person_name = people[person]['name']
         person_gender = people[person]['gender']
@@ -32,16 +32,24 @@ def vote():
         Your ethnicity is {person_ethnicity}, born in {person_nationality}, and you've lived in the United States for many years now.
         """
         
-        prompt = """
-        Your hometown has $2 million and has the choice to build a public park or museum showing the heritage of the city. The decision is put up to a vote. Which way will you vote? Voting is on a scale from -1 to 1.
+        prompt = f"""
+        Your hometown has $2 million and has the following proposition: 
 
-        If you really want to vote for a public park, vote with a 1. If you really want to vote for a museum, vote with a -1. If you want neither, vote 0. The farther from 0 indicates that you want it to happen more, for example, a person who votes with 0.8 wants a park more than someone who votes 0.1, who just marginally wants a park.
+        {proposition_text}
+
+        The proposition is put up to a vote for all citizens. Which way will you vote? Voting is on a scale from -1 to 1.
+
+        Vote with a 1 if you want to vote for: {proposition_range[1]}
+        Vote with a -1 if you want to vote for: {proposition_range[0]}
+        If you want neither, vote 0. 
+        
+        The farther from 0 indicates that you want it to happen more, for example, a person who votes with 0.8 wants {proposition_range[1]} more than someone who votes 0.1, who just marginally wants it.
 
         Only output the number in the following JSON format:
 
-        {
+        {{
         'vote': <insert_vote>
-        }
+        }}
         """
 
         messages = [
@@ -67,4 +75,17 @@ def vote():
     #print(data)
 
 if __name__ == "__main__":
-    vote()
+    #proposition_text = "Give all executive power to the mayor or give executive power among a citizen-elected committee."
+    #proposition_range = ["executive power to the mayor", "executive power among a citizen-elected committee"]
+
+    proposition_text = """
+
+    The stock market is at a crossroads. Where would you want the city to invest the money, Bitcoin or Gold?
+
+    The GDP growth rate has decreased from 4.9% to 3.2%, indicating a slowdown in economic activity. However, the non-farm payrolls have increased by 275 thousand, suggesting a strong job market.
+    The inflation rate has risen to 3.2%, which is above the central bank's target of 2%. This could lead to higher interest rates and reduced consumer spending. On the other hand, the manufacturing PMI has increased to 52.5, indicating expansion in the manufacturing sector.
+    The balance of trade deficit has widened to -$67.43 billion, indicating that imports are outpacing exports. However, the current account deficit has narrowed to -$195 billion, suggesting an improvement in the overall trade balance.
+    The government debt to GDP ratio has increased to 129%, indicating a high level of government borrowing. This could lead to higher interest rates and reduced government spending in the future. However, the government budget deficit has decreased to -5.8% of GDP, indicating an improvement in fiscal policy.
+    """
+    proposition_range = ["bitcoin", "gold"]
+    vote(proposition_text, proposition_range)

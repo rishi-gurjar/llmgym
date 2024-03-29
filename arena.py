@@ -58,6 +58,3 @@ def synthesize_town():
 
     x = combined_calls(calls, messages, prompt, data, times=15)
     json2csv(x)
-
-    #generate synethtic roles
-    #quadratic vote system
