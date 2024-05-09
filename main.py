@@ -11,8 +11,8 @@ os.environ["MISTRAL_API_KEY"] = os.getenv("MISTRAL_API_KEY")
 def openai_call(messages, model):
     response = completion(model=model, 
                           messages=messages, 
-                          temperature=0.5,
-                          response_format={"type": "json_object"},
+                          temperature=0.7,
+                          #response_format={"type": "json_object"},
                           max_tokens=1000
                           )
 
@@ -57,7 +57,6 @@ def print_combined_calls(calls, messages, times=1):
 
 
 def combined_calls(calls, messages, times=1):
-
     for _ in range(times):
         for call in calls:
             if call[:3] == 'gpt':
@@ -66,8 +65,7 @@ def combined_calls(calls, messages, times=1):
                     print(openai_call(messages, 'gpt-4'))
                 elif call == 'gpt-3.5-turbo':
                     print('gpt-3.5-turbo')
-                    return openai_call(messages, 'gpt-3.5-turbo')
-
+                    print(openai_call(messages, 'gpt-3.5-turbo'))
             elif 'mistral' in call:
                 if call == 'mistral-tiny':
                     print('mistral/mistral-tiny')
